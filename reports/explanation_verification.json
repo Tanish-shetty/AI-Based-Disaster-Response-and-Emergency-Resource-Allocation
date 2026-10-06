@@ -1,0 +1,9 @@
+{
+  "method": "SHAP",
+  "prediction": "High",
+  "units": "predicted-class logit (before softmax)",
+  "base_value": 0.5342127400980106,
+  "explained_output": 6.440264002205519,
+  "reconstructed_output": 6.440264002205518,
+  "warning": "Attribution explains model behavior; it does not establish causality or correctness."
+}

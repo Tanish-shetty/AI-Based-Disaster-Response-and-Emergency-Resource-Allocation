@@ -1,0 +1,1178 @@
+[
+  {
+    "ai_recommendation": {
+      "ambulances": 1,
+      "food_shelter_units": 4,
+      "medical_supplies": 3,
+      "rescue_teams": 1
+    },
+    "area_id": "AREA-02",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.9214343841953642,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-02",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 1,
+      "food_shelter_units": 4,
+      "medical_supplies": 3,
+      "rescue_teams": 1
+    },
+    "human_decision": "Accept",
+    "human_override": false,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00001",
+    "input_sha256": "5ecd7710a259a1e7de9aadf10bf40e9db005b4b08a0aa91e41e94373bf17ff86",
+    "input_snapshot": {
+      "area_category": "Peripheral",
+      "area_id": "AREA-02",
+      "area_name": "Riverside",
+      "available_ambulances": 3,
+      "available_rescue_teams": 2,
+      "distance_to_hospital_km": 19.436404271798832,
+      "emergency_calls": 234,
+      "evacuation_percentage": 0.3580033874732667,
+      "flood_level": 3.8615908977248337,
+      "historical_severity": 0.1943143453873006,
+      "hospital_capacity": 370,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.3654414789102038,
+      "input_record_identifier": "REC-00001",
+      "medical_emergencies": 68,
+      "population": 60451,
+      "population_density": 16612,
+      "priority_label": "High",
+      "rainfall_mm": 294.4564025190021,
+      "response_time_minutes": 82.85896757659852,
+      "road_accessibility": 0.0837763333605977,
+      "sensor_reliability": 0.6667811241362248,
+      "true_severity": 74.85701515496007,
+      "vulnerable_population": null
+    },
+    "mandatory_review": true,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": null,
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "High",
+    "priority_score": 76.19233723439032,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "High",
+    "timestamp": "2026-10-06T19:57:21.839380+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 1.6766511889459301,
+        "feature": "road_accessibility"
+      },
+      {
+        "contribution": 1.4080478522582578,
+        "feature": "flood_level"
+      },
+      {
+        "contribution": 1.1097954988144914,
+        "feature": "medical_emergencies"
+      },
+      {
+        "contribution": 0.8639829042932776,
+        "feature": "population"
+      },
+      {
+        "contribution": 0.35124702865424295,
+        "feature": "evacuation_percentage"
+      },
+      {
+        "contribution": -0.30473896596588623,
+        "feature": "sensor_reliability"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  },
+  {
+    "ai_recommendation": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 1
+    },
+    "area_id": "AREA-03",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.9896685288602551,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-03",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 1
+    },
+    "human_decision": "Accept",
+    "human_override": false,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00002",
+    "input_sha256": "597a50c3a0b3acf1dc779b9157cb6ad3a9fefe42810ab164e171a19586f8d02a",
+    "input_snapshot": {
+      "area_category": "Central",
+      "area_id": "AREA-03",
+      "area_name": "Old Town",
+      "available_ambulances": 3,
+      "available_rescue_teams": 0,
+      "distance_to_hospital_km": 13.41836236597145,
+      "emergency_calls": 145,
+      "evacuation_percentage": 0.4845478296858787,
+      "flood_level": 2.27895445453127,
+      "historical_severity": 0.5802338509579633,
+      "hospital_capacity": 329,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.4256351373869175,
+      "input_record_identifier": "REC-00002",
+      "medical_emergencies": 30,
+      "population": 61146,
+      "population_density": 19123,
+      "priority_label": "Medium",
+      "rainfall_mm": 218.02106542303272,
+      "response_time_minutes": 53.453927975096434,
+      "road_accessibility": 0.4820145543481074,
+      "sensor_reliability": 0.9541581106304317,
+      "true_severity": 63.89467774575296,
+      "vulnerable_population": 0.2050319267383538
+    },
+    "mandatory_review": false,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": null,
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "Medium",
+    "priority_score": 54.98104023765164,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "Medium",
+    "timestamp": "2026-10-06T19:57:21.843876+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 0.46668894028235663,
+        "feature": "vulnerable_population"
+      },
+      {
+        "contribution": 0.44511336653919137,
+        "feature": "population"
+      },
+      {
+        "contribution": 0.2616078518939177,
+        "feature": "flood_level"
+      },
+      {
+        "contribution": 0.24376701028575237,
+        "feature": "infrastructure_damage"
+      },
+      {
+        "contribution": -0.2059230811306534,
+        "feature": "emergency_calls"
+      },
+      {
+        "contribution": -0.1881782847580243,
+        "feature": "medical_emergencies"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  },
+  {
+    "ai_recommendation": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 1
+    },
+    "area_id": "AREA-05",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.9837690137845112,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-05",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 1
+    },
+    "human_decision": "Accept",
+    "human_override": false,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00004",
+    "input_sha256": "d324e9df378fbb3452441b0e7ccfefebdc5a693db08e108779404d2e83a5f21b",
+    "input_snapshot": {
+      "area_category": "Residential",
+      "area_id": "AREA-05",
+      "area_name": "Hill Junction",
+      "available_ambulances": 4,
+      "available_rescue_teams": 3,
+      "distance_to_hospital_km": 2.643290565283684,
+      "emergency_calls": 67,
+      "evacuation_percentage": 0.7674537189191115,
+      "flood_level": 3.657953777117372,
+      "historical_severity": 0.1523932056256572,
+      "hospital_capacity": 88,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.5681017080513693,
+      "input_record_identifier": "REC-00004",
+      "medical_emergencies": 9,
+      "population": 16435,
+      "population_density": 17567,
+      "priority_label": "Medium",
+      "rainfall_mm": 241.3143904937282,
+      "response_time_minutes": 51.231293748923214,
+      "road_accessibility": 0.3268025677764735,
+      "sensor_reliability": 0.6617646190466505,
+      "true_severity": 61.67870707837127,
+      "vulnerable_population": 0.0457361188052415
+    },
+    "mandatory_review": true,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": null,
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "Medium",
+    "priority_score": 54.59882010879552,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "Medium",
+    "timestamp": "2026-10-06T19:57:21.846413+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 0.963130820692439,
+        "feature": "vulnerable_population"
+      },
+      {
+        "contribution": -0.4595439813177388,
+        "feature": "flood_level"
+      },
+      {
+        "contribution": -0.4298455928176437,
+        "feature": "road_accessibility"
+      },
+      {
+        "contribution": 0.34801492825669905,
+        "feature": "medical_emergencies"
+      },
+      {
+        "contribution": -0.24488929034196197,
+        "feature": "population"
+      },
+      {
+        "contribution": 0.23303303879215545,
+        "feature": "evacuation_percentage"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  },
+  {
+    "ai_recommendation": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 1
+    },
+    "area_id": "AREA-12",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.9276993685781865,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-12",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 0
+    },
+    "human_decision": "Override",
+    "human_override": true,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00011",
+    "input_sha256": "87c1c6bca08376f308521eeef9d7586c1046079112a01c3923678aa0ee3e572f",
+    "input_snapshot": {
+      "area_category": "Peripheral",
+      "area_id": "AREA-12",
+      "area_name": "Outer Settlement",
+      "available_ambulances": 7,
+      "available_rescue_teams": 0,
+      "distance_to_hospital_km": 15.247911398764629,
+      "emergency_calls": 76,
+      "evacuation_percentage": 0.2117548908273404,
+      "flood_level": 1.9838852840443093,
+      "historical_severity": 0.6189963642962194,
+      "hospital_capacity": 329,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.2401943569844046,
+      "input_record_identifier": "REC-00011",
+      "medical_emergencies": 12,
+      "population": 38732,
+      "population_density": 2409,
+      "priority_label": "Medium",
+      "rainfall_mm": 153.65001698587398,
+      "response_time_minutes": 62.31263799964602,
+      "road_accessibility": 0.5591510324827851,
+      "sensor_reliability": 0.9561813991367684,
+      "true_severity": 42.94922801396405,
+      "vulnerable_population": null
+    },
+    "mandatory_review": true,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": "Simulated field report confirms Lake Colony needs rescue support.",
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "Medium",
+    "priority_score": 52.4801385212425,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "Medium",
+    "timestamp": "2026-10-06T19:57:21.847856+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 0.7905332529213054,
+        "feature": "infrastructure_damage"
+      },
+      {
+        "contribution": -0.4817775309366466,
+        "feature": "evacuation_percentage"
+      },
+      {
+        "contribution": 0.41591515990757233,
+        "feature": "flood_level"
+      },
+      {
+        "contribution": 0.27141589782602427,
+        "feature": "medical_emergencies"
+      },
+      {
+        "contribution": 0.24363644907790286,
+        "feature": "rainfall_mm"
+      },
+      {
+        "contribution": 0.15606242376448534,
+        "feature": "population_density"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  },
+  {
+    "ai_recommendation": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 1
+    },
+    "area_id": "AREA-08",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.9117876477744493,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-08",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 1
+    },
+    "human_decision": "Accept",
+    "human_override": false,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00007",
+    "input_sha256": "ab6ce38c8e60ed170d237f3877ab86ef242a4039040d3e1b47642d5c1d5884b3",
+    "input_snapshot": {
+      "area_category": "Peripheral",
+      "area_id": "AREA-08",
+      "area_name": "Canal Quarter",
+      "available_ambulances": 0,
+      "available_rescue_teams": 2,
+      "distance_to_hospital_km": 28.20093683605826,
+      "emergency_calls": 63,
+      "evacuation_percentage": 0.7189376326390022,
+      "flood_level": 2.1216237113472256,
+      "historical_severity": 0.6017576447391403,
+      "hospital_capacity": 201,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.369202977939736,
+      "input_record_identifier": "REC-00007",
+      "medical_emergencies": 17,
+      "population": 23198,
+      "population_density": 16307,
+      "priority_label": "Medium",
+      "rainfall_mm": 254.91296737491973,
+      "response_time_minutes": 76.70547817915514,
+      "road_accessibility": 0.6018517030988535,
+      "sensor_reliability": 0.8212112776057827,
+      "true_severity": 44.97226131808316,
+      "vulnerable_population": null
+    },
+    "mandatory_review": true,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": null,
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "Medium",
+    "priority_score": 51.941496616748445,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "Medium",
+    "timestamp": "2026-10-06T19:57:21.849366+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 0.4101554374578791,
+        "feature": "infrastructure_damage"
+      },
+      {
+        "contribution": 0.34388443608755637,
+        "feature": "flood_level"
+      },
+      {
+        "contribution": 0.17062547281980214,
+        "feature": "evacuation_percentage"
+      },
+      {
+        "contribution": -0.16157873855016225,
+        "feature": "distance_to_hospital_km"
+      },
+      {
+        "contribution": -0.14716367027894056,
+        "feature": "rainfall_mm"
+      },
+      {
+        "contribution": 0.14375084710823302,
+        "feature": "medical_emergencies"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  },
+  {
+    "ai_recommendation": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 0
+    },
+    "area_id": "AREA-10",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.9119774908176296,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-10",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 1
+    },
+    "human_decision": "Override",
+    "human_override": true,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00009",
+    "input_sha256": "78bbcbafd812be1d1154f49e9fe3d8e3071425e51f72bb972197f79ed5bbdb0e",
+    "input_snapshot": {
+      "area_category": "Peripheral",
+      "area_id": "AREA-10",
+      "area_name": "Lake Colony",
+      "available_ambulances": 6,
+      "available_rescue_teams": 2,
+      "distance_to_hospital_km": 11.214129862305764,
+      "emergency_calls": 58,
+      "evacuation_percentage": 0.8650435567332658,
+      "flood_level": 2.643400514709675,
+      "historical_severity": 0.5211502509999736,
+      "hospital_capacity": 275,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.4894145176245404,
+      "input_record_identifier": "REC-00009",
+      "medical_emergencies": 20,
+      "population": 16909,
+      "population_density": 18371,
+      "priority_label": "Medium",
+      "rainfall_mm": 183.9229840725298,
+      "response_time_minutes": 41.66619329403823,
+      "road_accessibility": 0.6487435625415834,
+      "sensor_reliability": 0.7790236572789759,
+      "true_severity": 49.07975996194036,
+      "vulnerable_population": null
+    },
+    "mandatory_review": true,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": "Simulated field report confirms Lake Colony needs rescue support.",
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "Medium",
+    "priority_score": 51.93238089876392,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "Medium",
+    "timestamp": "2026-10-06T19:57:21.850790+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 0.3585655107738253,
+        "feature": "evacuation_percentage"
+      },
+      {
+        "contribution": -0.23757428375830994,
+        "feature": "population"
+      },
+      {
+        "contribution": -0.14432651654992137,
+        "feature": "population_density"
+      },
+      {
+        "contribution": 0.13432819006357502,
+        "feature": "vulnerable_population"
+      },
+      {
+        "contribution": 0.1268051785559777,
+        "feature": "rainfall_mm"
+      },
+      {
+        "contribution": 0.1106017962256513,
+        "feature": "emergency_calls"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  },
+  {
+    "ai_recommendation": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 0
+    },
+    "area_id": "AREA-07",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.8947935217429311,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-07",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 2,
+      "rescue_teams": 0
+    },
+    "human_decision": "Accept",
+    "human_override": false,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00006",
+    "input_sha256": "5f6def838012aea0f3d1b72a089c831cc2e2f85b49d72e9a661928586dceee49",
+    "input_snapshot": {
+      "area_category": "Residential",
+      "area_id": "AREA-07",
+      "area_name": "North Estate",
+      "available_ambulances": 5,
+      "available_rescue_teams": 3,
+      "distance_to_hospital_km": 19.482103694043342,
+      "emergency_calls": 85,
+      "evacuation_percentage": 0.5573937699484437,
+      "flood_level": 2.158112466761307,
+      "historical_severity": 0.8270387038514093,
+      "hospital_capacity": 49,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.1690298794597198,
+      "input_record_identifier": "REC-00006",
+      "medical_emergencies": 26,
+      "population": 38792,
+      "population_density": 13107,
+      "priority_label": "Medium",
+      "rainfall_mm": 130.8763622822772,
+      "response_time_minutes": 54.65760259133739,
+      "road_accessibility": 0.6901684270682521,
+      "sensor_reliability": 0.9081577393680592,
+      "true_severity": 49.15566760292184,
+      "vulnerable_population": 0.3537599100696623
+    },
+    "mandatory_review": false,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": null,
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "Medium",
+    "priority_score": 51.328945933644846,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "Medium",
+    "timestamp": "2026-10-06T19:57:21.851974+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 1.0003594513488379,
+        "feature": "infrastructure_damage"
+      },
+      {
+        "contribution": 0.3315259184461578,
+        "feature": "rainfall_mm"
+      },
+      {
+        "contribution": 0.3248025319651317,
+        "feature": "flood_level"
+      },
+      {
+        "contribution": 0.1714068605529545,
+        "feature": "road_accessibility"
+      },
+      {
+        "contribution": -0.15491686192113968,
+        "feature": "area_category_Residential"
+      },
+      {
+        "contribution": 0.10013518685362624,
+        "feature": "population"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  },
+  {
+    "ai_recommendation": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 1,
+      "rescue_teams": 0
+    },
+    "area_id": "AREA-01",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.7726745234499022,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-01",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 1,
+      "food_shelter_units": 3,
+      "medical_supplies": 1,
+      "rescue_teams": 0
+    },
+    "human_decision": "Accept",
+    "human_override": false,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00000",
+    "input_sha256": "6aea9a72e39417581f91109d5a821903d805c7b68721962e7cd6c5c68df86f14",
+    "input_snapshot": {
+      "area_category": "Central",
+      "area_id": "AREA-01",
+      "area_name": "Central Market",
+      "available_ambulances": 6,
+      "available_rescue_teams": 1,
+      "distance_to_hospital_km": 7.301921327312468,
+      "emergency_calls": 30,
+      "evacuation_percentage": 0.2834050821026392,
+      "flood_level": 2.02415550207236,
+      "historical_severity": 0.3691585208668803,
+      "hospital_capacity": 403,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.4319802118828804,
+      "input_record_identifier": "REC-00000",
+      "medical_emergencies": 4,
+      "population": 15249,
+      "population_density": 17472,
+      "priority_label": "Medium",
+      "rainfall_mm": 144.5401999918574,
+      "response_time_minutes": 25.944508495593148,
+      "road_accessibility": 0.7959875171669903,
+      "sensor_reliability": 0.8004508741178558,
+      "true_severity": 50.57840302625274,
+      "vulnerable_population": 0.4715332420160125
+    },
+    "mandatory_review": false,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": null,
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "Medium",
+    "priority_score": 47.053156752400255,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "Medium",
+    "timestamp": "2026-10-06T19:57:21.853200+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 0.4756799789744903,
+        "feature": "medical_emergencies"
+      },
+      {
+        "contribution": 0.39485572856550316,
+        "feature": "flood_level"
+      },
+      {
+        "contribution": -0.38961193429044333,
+        "feature": "evacuation_percentage"
+      },
+      {
+        "contribution": -0.36385654490551705,
+        "feature": "vulnerable_population"
+      },
+      {
+        "contribution": 0.3465030780658425,
+        "feature": "road_accessibility"
+      },
+      {
+        "contribution": 0.27879360729720154,
+        "feature": "rainfall_mm"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  },
+  {
+    "ai_recommendation": {
+      "ambulances": 1,
+      "food_shelter_units": 2,
+      "medical_supplies": 1,
+      "rescue_teams": 0
+    },
+    "area_id": "AREA-11",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.8322072639705325,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-11",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 1,
+      "food_shelter_units": 2,
+      "medical_supplies": 1,
+      "rescue_teams": 0
+    },
+    "human_decision": "Accept",
+    "human_override": false,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00010",
+    "input_sha256": "735776ffe004f99a0beef6e74345c992b0b251a9c5d6faef3bce5f338b5cbf33",
+    "input_snapshot": {
+      "area_category": "Central",
+      "area_id": "AREA-11",
+      "area_name": "Industrial Ward",
+      "available_ambulances": 2,
+      "available_rescue_teams": 1,
+      "distance_to_hospital_km": 10.431720731845166,
+      "emergency_calls": 8,
+      "evacuation_percentage": 0.4654989907920655,
+      "flood_level": 1.81079658651948,
+      "historical_severity": 0.5201951593550558,
+      "hospital_capacity": 124,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.4360932178279099,
+      "input_record_identifier": "REC-00010",
+      "medical_emergencies": 2,
+      "population": 4078,
+      "population_density": 10739,
+      "priority_label": "Low",
+      "rainfall_mm": 132.1479670709452,
+      "response_time_minutes": 47.1925914477701,
+      "road_accessibility": 0.7496237186003334,
+      "sensor_reliability": 0.7090382750118578,
+      "true_severity": 30.38523288341935,
+      "vulnerable_population": 0.2596960486611869
+    },
+    "mandatory_review": false,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": null,
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "Low",
+    "priority_score": 25.87281531949863,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "Low",
+    "timestamp": "2026-10-06T19:57:21.854238+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 2.8544852424053944,
+        "feature": "flood_level"
+      },
+      {
+        "contribution": 1.2629969872342153,
+        "feature": "medical_emergencies"
+      },
+      {
+        "contribution": 0.9743161953936297,
+        "feature": "road_accessibility"
+      },
+      {
+        "contribution": 0.8498136252558992,
+        "feature": "emergency_calls"
+      },
+      {
+        "contribution": 0.8177611561731102,
+        "feature": "vulnerable_population"
+      },
+      {
+        "contribution": 0.6754131063351565,
+        "feature": "population"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  },
+  {
+    "ai_recommendation": {
+      "ambulances": 1,
+      "food_shelter_units": 1,
+      "medical_supplies": 1,
+      "rescue_teams": 0
+    },
+    "area_id": "AREA-04",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.8544470371456232,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-04",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 1,
+      "food_shelter_units": 1,
+      "medical_supplies": 1,
+      "rescue_teams": 0
+    },
+    "human_decision": "Accept",
+    "human_override": false,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00003",
+    "input_sha256": "78bae15567736afd92f15943e035c5e9a31da32ea27d6313557b4216c1e43f8c",
+    "input_snapshot": {
+      "area_category": "Residential",
+      "area_id": "AREA-04",
+      "area_name": "East Gardens",
+      "available_ambulances": 3,
+      "available_rescue_teams": 0,
+      "distance_to_hospital_km": 14.34080587402648,
+      "emergency_calls": 69,
+      "evacuation_percentage": 0.4737841046854835,
+      "flood_level": 0.773529060369859,
+      "historical_severity": 0.8353475341894011,
+      "hospital_capacity": 59,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.0415755254149757,
+      "input_record_identifier": "REC-00003",
+      "medical_emergencies": 20,
+      "population": 60318,
+      "population_density": 4827,
+      "priority_label": "Low",
+      "rainfall_mm": 87.3358563977039,
+      "response_time_minutes": 47.09604520461458,
+      "road_accessibility": 0.8048576311862072,
+      "sensor_reliability": 0.6855781602068614,
+      "true_severity": 39.11961005015571,
+      "vulnerable_population": 0.4211778931261881
+    },
+    "mandatory_review": true,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": null,
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "Low",
+    "priority_score": 25.09437342922343,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "Low",
+    "timestamp": "2026-10-06T19:57:21.855165+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 5.911937951057822,
+        "feature": "flood_level"
+      },
+      {
+        "contribution": 3.192350382607396,
+        "feature": "infrastructure_damage"
+      },
+      {
+        "contribution": 1.3043808171158335,
+        "feature": "road_accessibility"
+      },
+      {
+        "contribution": 0.8732325234639071,
+        "feature": "rainfall_mm"
+      },
+      {
+        "contribution": -0.6703683402510651,
+        "feature": "population"
+      },
+      {
+        "contribution": -0.571038153284806,
+        "feature": "vulnerable_population"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  },
+  {
+    "ai_recommendation": {
+      "ambulances": 0,
+      "food_shelter_units": 1,
+      "medical_supplies": 1,
+      "rescue_teams": 0
+    },
+    "area_id": "AREA-06",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.9469202438681509,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-06",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 0,
+      "food_shelter_units": 1,
+      "medical_supplies": 1,
+      "rescue_teams": 0
+    },
+    "human_decision": "Accept",
+    "human_override": false,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00005",
+    "input_sha256": "039839eb898b6ef61ebcedc6d7287264f9266093214ad5f18ada4712052f2d52",
+    "input_snapshot": {
+      "area_category": "Peripheral",
+      "area_id": "AREA-06",
+      "area_name": "South Ward",
+      "available_ambulances": 6,
+      "available_rescue_teams": 0,
+      "distance_to_hospital_km": 14.092045051431713,
+      "emergency_calls": 35,
+      "evacuation_percentage": 0.4095121908605786,
+      "flood_level": 0.7908672328237809,
+      "historical_severity": 0.1174414703850963,
+      "hospital_capacity": 306,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.0,
+      "input_record_identifier": "REC-00005",
+      "medical_emergencies": 7,
+      "population": 29622,
+      "population_density": 1784,
+      "priority_label": "Low",
+      "rainfall_mm": 120.198227458065,
+      "response_time_minutes": 52.59420856692213,
+      "road_accessibility": 0.5682976490231086,
+      "sensor_reliability": 0.8418991896587583,
+      "true_severity": 24.642649689040542,
+      "vulnerable_population": null
+    },
+    "mandatory_review": true,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": null,
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "Low",
+    "priority_score": 21.857794147419842,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "Low",
+    "timestamp": "2026-10-06T19:57:21.856162+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 5.860831904646531,
+        "feature": "flood_level"
+      },
+      {
+        "contribution": 3.476716292816957,
+        "feature": "infrastructure_damage"
+      },
+      {
+        "contribution": 0.9568901071483656,
+        "feature": "medical_emergencies"
+      },
+      {
+        "contribution": 0.6515429934399187,
+        "feature": "rainfall_mm"
+      },
+      {
+        "contribution": -0.5863503728688106,
+        "feature": "evacuation_percentage"
+      },
+      {
+        "contribution": 0.5644284525953361,
+        "feature": "emergency_calls"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  },
+  {
+    "ai_recommendation": {
+      "ambulances": 0,
+      "food_shelter_units": 1,
+      "medical_supplies": 1,
+      "rescue_teams": 0
+    },
+    "area_id": "AREA-09",
+    "budget": {
+      "ambulances": 10,
+      "food_shelter_units": 30,
+      "medical_supplies": 20,
+      "rescue_teams": 5
+    },
+    "confidence": 0.9824219688147603,
+    "confidence_threshold": 0.7,
+    "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "dataset_version": "synthetic-flood-v1",
+    "decision_id": "3ab1a7d6e7feb62c6a51bee4-AREA-09",
+    "explanation_method": "SHAP",
+    "explanation_units": "predicted-class logit (before softmax)",
+    "final_decision": {
+      "ambulances": 0,
+      "food_shelter_units": 1,
+      "medical_supplies": 1,
+      "rescue_teams": 0
+    },
+    "human_decision": "Accept",
+    "human_override": false,
+    "human_reviewer": "SIM-Coordinator-01",
+    "incident_id": "DEMO-FLOOD-01",
+    "input_record_identifier": "REC-00008",
+    "input_sha256": "0111671484e01e62005c4ff2fc2a43e7f07fca4f866d11e481ec862954347726",
+    "input_snapshot": {
+      "area_category": "Residential",
+      "area_id": "AREA-09",
+      "area_name": "West Park",
+      "available_ambulances": 5,
+      "available_rescue_teams": 3,
+      "distance_to_hospital_km": 5.899312598269477,
+      "emergency_calls": 8,
+      "evacuation_percentage": 0.4889853218072661,
+      "flood_level": 0.8233431965101827,
+      "historical_severity": 0.1191307544972896,
+      "hospital_capacity": 96,
+      "incident_id": "DEMO-FLOOD-01",
+      "infrastructure_damage": 0.3883984696571579,
+      "input_record_identifier": "REC-00008",
+      "medical_emergencies": 1,
+      "population": 6790,
+      "population_density": 13222,
+      "priority_label": "Low",
+      "rainfall_mm": 99.50024688092972,
+      "response_time_minutes": 23.19076002351675,
+      "road_accessibility": 0.9020576640604692,
+      "sensor_reliability": 0.6973607989715886,
+      "true_severity": 28.715825417103314,
+      "vulnerable_population": 0.4871909241810661
+    },
+    "mandatory_review": true,
+    "model_name": "Logistic Regression",
+    "model_version": "v1-5f86bbbf",
+    "override_reason": null,
+    "portfolio_id": "3ab1a7d6e7feb62c6a51bee4",
+    "prediction": "Low",
+    "priority_score": 20.61523232403927,
+    "responsible_authority": "SIM-Authority-01",
+    "scenario": "Missing Vulnerable Population Data",
+    "score_band": "Low",
+    "timestamp": "2026-10-06T19:57:21.858107+00:00",
+    "top_explanation_features": [
+      {
+        "contribution": 5.765105661767156,
+        "feature": "flood_level"
+      },
+      {
+        "contribution": 1.8852249141576596,
+        "feature": "road_accessibility"
+      },
+      {
+        "contribution": 1.3242183632513853,
+        "feature": "medical_emergencies"
+      },
+      {
+        "contribution": -1.1387728868579574,
+        "feature": "vulnerable_population"
+      },
+      {
+        "contribution": 0.8498136252558992,
+        "feature": "emergency_calls"
+      },
+      {
+        "contribution": 0.8201705668001136,
+        "feature": "infrastructure_damage"
+      }
+    ],
+    "review_timestamp": "2026-10-06T19:57:21.869435+00:00"
+  }
+]

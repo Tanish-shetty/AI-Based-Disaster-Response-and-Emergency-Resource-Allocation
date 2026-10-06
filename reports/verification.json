@@ -1,0 +1,13 @@
+{
+  "timestamp_utc": "2026-10-06T20:01:01.882749+00:00",
+  "fresh_training_and_results": true,
+  "deterministic_artifact_hashes_match": true,
+  "artifact_sha256": {
+    "data\\raw\\synthetic_flood.csv": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+    "reports\\model_comparison.csv": "2ef2ec039342c72d71ee90570e05c437f53047da6a9f277c731433af437624a3",
+    "reports\\scenario_summary.csv": "8ebfb7f6246ca442a1088808d845f30119e0656c1f8bc75ac651a252c10f5ca3"
+  },
+  "test_exit_code": 0,
+  "test_output": ".................................                                        [100%]\n33 passed in 16.51s",
+  "note": "Dashboard browser render check is separately saved in browser_verification.json; AppTest checks pages and forms."
+}

@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.venv/
+logs/*.sqlite*
+logs/*.log
+logs/*.pid
+.test-tmp/
+*.tmp

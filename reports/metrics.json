@@ -1,0 +1,337 @@
+{
+  "dataset_version": "synthetic-flood-v1",
+  "dataset_sha256": "5f86bbbf89be4e22f59792e266fbc5463479683d8c9327ead9b214d1303cbc9e",
+  "model_name": "Logistic Regression",
+  "model_version": "v1-5f86bbbf",
+  "seed": 42,
+  "records": 3000,
+  "features": [
+    "flood_level",
+    "rainfall_mm",
+    "population",
+    "population_density",
+    "emergency_calls",
+    "road_accessibility",
+    "distance_to_hospital_km",
+    "vulnerable_population",
+    "hospital_capacity",
+    "available_rescue_teams",
+    "available_ambulances",
+    "medical_emergencies",
+    "infrastructure_damage",
+    "evacuation_percentage",
+    "historical_severity",
+    "sensor_reliability",
+    "area_category"
+  ],
+  "split_counts": {
+    "train": 1800,
+    "validation": 600,
+    "test": 600
+  },
+  "class_counts": {
+    "Medium": 1914,
+    "Low": 767,
+    "High": 270,
+    "Critical": 49
+  },
+  "selection_rule": "Highest validation macro F1; test never used for selection",
+  "validation": {
+    "Logistic Regression": {
+      "accuracy": 0.855,
+      "precision_macro": 0.8168437519898086,
+      "recall_macro": 0.7708315546828312,
+      "f1_macro": 0.7895146047220899,
+      "confusion_matrix": [
+        [
+          126,
+          27,
+          0,
+          0
+        ],
+        [
+          23,
+          341,
+          7,
+          0
+        ],
+        [
+          0,
+          24,
+          36,
+          3
+        ],
+        [
+          0,
+          0,
+          3,
+          10
+        ]
+      ],
+      "classification_report": {
+        "Low": {
+          "precision": 0.8456375838926175,
+          "recall": 0.8235294117647058,
+          "f1-score": 0.8344370860927153,
+          "support": 153.0
+        },
+        "Medium": {
+          "precision": 0.8698979591836735,
+          "recall": 0.9191374663072777,
+          "f1-score": 0.8938401048492791,
+          "support": 371.0
+        },
+        "High": {
+          "precision": 0.782608695652174,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.6605504587155964,
+          "support": 63.0
+        },
+        "Critical": {
+          "precision": 0.7692307692307693,
+          "recall": 0.7692307692307693,
+          "f1-score": 0.7692307692307693,
+          "support": 13.0
+        },
+        "accuracy": 0.855,
+        "macro avg": {
+          "precision": 0.8168437519898085,
+          "recall": 0.770831554682831,
+          "f1-score": 0.78951460472209,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.8523650683646672,
+          "recall": 0.855,
+          "f1-score": 0.8514970532839176,
+          "support": 600.0
+        }
+      },
+      "roc_auc_ovr_macro": 0.9732361386960042,
+      "multiclass_brier": 0.1930845770081929
+    },
+    "Random Forest": {
+      "accuracy": 0.83,
+      "precision_macro": 0.8163801761268686,
+      "recall_macro": 0.7245700408852462,
+      "f1_macro": 0.7614818346210751,
+      "confusion_matrix": [
+        [
+          127,
+          26,
+          0,
+          0
+        ],
+        [
+          36,
+          327,
+          8,
+          0
+        ],
+        [
+          0,
+          26,
+          36,
+          1
+        ],
+        [
+          0,
+          0,
+          5,
+          8
+        ]
+      ],
+      "classification_report": {
+        "Low": {
+          "precision": 0.7791411042944786,
+          "recall": 0.8300653594771242,
+          "f1-score": 0.8037974683544303,
+          "support": 153.0
+        },
+        "Medium": {
+          "precision": 0.862796833773087,
+          "recall": 0.8814016172506739,
+          "f1-score": 0.872,
+          "support": 371.0
+        },
+        "High": {
+          "precision": 0.7346938775510204,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.6428571428571429,
+          "support": 63.0
+        },
+        "Critical": {
+          "precision": 0.8888888888888888,
+          "recall": 0.6153846153846154,
+          "f1-score": 0.7272727272727273,
+          "support": 13.0
+        },
+        "accuracy": 0.83,
+        "macro avg": {
+          "precision": 0.8163801761268688,
+          "recall": 0.7245700408852462,
+          "f1-score": 0.7614818346210752,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.8285791402135672,
+          "recall": 0.83,
+          "f1-score": 0.8274125968546221,
+          "support": 600.0
+        }
+      },
+      "roc_auc_ovr_macro": 0.9638677030611235,
+      "multiclass_brier": 0.22636232212177007
+    }
+  },
+  "test": {
+    "Logistic Regression": {
+      "accuracy": 0.85,
+      "precision_macro": 0.815687393740755,
+      "recall_macro": 0.7075610032005099,
+      "f1_macro": 0.7524180444967693,
+      "confusion_matrix": [
+        [
+          109,
+          32,
+          0,
+          0
+        ],
+        [
+          20,
+          363,
+          8,
+          0
+        ],
+        [
+          0,
+          26,
+          34,
+          1
+        ],
+        [
+          0,
+          0,
+          3,
+          4
+        ]
+      ],
+      "classification_report": {
+        "Low": {
+          "precision": 0.8449612403100775,
+          "recall": 0.7730496453900709,
+          "f1-score": 0.8074074074074075,
+          "support": 141.0
+        },
+        "Medium": {
+          "precision": 0.8622327790973872,
+          "recall": 0.928388746803069,
+          "f1-score": 0.8940886699507389,
+          "support": 391.0
+        },
+        "High": {
+          "precision": 0.7555555555555555,
+          "recall": 0.5573770491803278,
+          "f1-score": 0.6415094339622641,
+          "support": 61.0
+        },
+        "Critical": {
+          "precision": 0.8,
+          "recall": 0.5714285714285714,
+          "f1-score": 0.6666666666666666,
+          "support": 7.0
+        },
+        "accuracy": 0.85,
+        "macro avg": {
+          "precision": 0.8156873937407549,
+          "recall": 0.7075610032005097,
+          "f1-score": 0.7524180444967692,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.846602400666147,
+          "recall": 0.85,
+          "f1-score": 0.8453864275559135,
+          "support": 600.0
+        }
+      },
+      "roc_auc_ovr_macro": 0.9627122029002935,
+      "multiclass_brier": 0.21262043266381356
+    },
+    "Random Forest": {
+      "accuracy": 0.8383333333333334,
+      "precision_macro": 0.8609194571019518,
+      "recall_macro": 0.6508314962144455,
+      "f1_macro": 0.7195964566262039,
+      "confusion_matrix": [
+        [
+          103,
+          38,
+          0,
+          0
+        ],
+        [
+          19,
+          366,
+          6,
+          0
+        ],
+        [
+          0,
+          30,
+          31,
+          0
+        ],
+        [
+          0,
+          0,
+          4,
+          3
+        ]
+      ],
+      "classification_report": {
+        "Low": {
+          "precision": 0.8442622950819673,
+          "recall": 0.7304964539007093,
+          "f1-score": 0.7832699619771863,
+          "support": 141.0
+        },
+        "Medium": {
+          "precision": 0.8433179723502304,
+          "recall": 0.9360613810741688,
+          "f1-score": 0.8872727272727273,
+          "support": 391.0
+        },
+        "High": {
+          "precision": 0.7560975609756098,
+          "recall": 0.5081967213114754,
+          "f1-score": 0.6078431372549019,
+          "support": 61.0
+        },
+        "Critical": {
+          "precision": 1.0,
+          "recall": 0.42857142857142855,
+          "f1-score": 0.6,
+          "support": 7.0
+        },
+        "accuracy": 0.8383333333333334,
+        "macro avg": {
+          "precision": 0.8609194571019518,
+          "recall": 0.6508314962144455,
+          "f1-score": 0.719596456626204,
+          "support": 600.0
+        },
+        "weighted avg": {
+          "precision": 0.8365004366916828,
+          "recall": 0.8383333333333334,
+          "f1-score": 0.8310718872916144,
+          "support": 600.0
+        }
+      },
+      "roc_auc_ovr_macro": 0.9548488022705225,
+      "multiclass_brier": 0.23322697416730884
+    }
+  },
+  "python_version": "3.13.0",
+  "sklearn_version": "1.9.0"
+}

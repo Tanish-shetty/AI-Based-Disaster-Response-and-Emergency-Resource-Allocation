@@ -1,0 +1,13 @@
+{
+  "url": "http://127.0.0.1:8501",
+  "pages": [
+    "AI Priority Analysis",
+    "Explainable AI",
+    "Ethical Risk Simulator",
+    "Human Review",
+    "Accountability Audit"
+  ],
+  "browser_errors": [],
+  "interactive_scenario_switch": true,
+  "mobile_render": true
+}

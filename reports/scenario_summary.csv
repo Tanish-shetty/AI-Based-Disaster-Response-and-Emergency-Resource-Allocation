@@ -1,0 +1,6 @@
+scenario,mean_absolute_score_change,changed_ranks,rescue_units_reassigned,missed_high_severity_areas,false_high_prioritizations,high_severity_without_rescue,mean_confidence,missing_feature_cells
+Complete Data,0.0,0,0,0,0,0,0.9148018545392298,0
+Missing Vulnerable Population Data,0.5744240460034765,4,1,0,0,0,0.9108167494168581,5
+Delayed Emergency Call Data,1.1275345900985367,0,0,0,0,0,0.887869371639581,0
+Noisy Sensor Data,5.315080587969259,9,2,0,0,0,0.7949400439276292,0
+Underrepresented Area Data,1.0365209890583076,4,1,0,0,0,0.9083157625053051,5

@@ -1,0 +1,4 @@
+area_category,n,high_severity_n,miss_rate_high,mean_score,mean_rescue_teams,interpretation
+Central,150,15,0.4,47.43772797723699,0.32666666666666666,Descriptive only; small group
+Peripheral,250,33,0.36363636363636365,51.64216271092034,0.532,Synthetic group diagnostic
+Residential,200,20,0.4,47.797263521145425,0.34,Descriptive only; small group

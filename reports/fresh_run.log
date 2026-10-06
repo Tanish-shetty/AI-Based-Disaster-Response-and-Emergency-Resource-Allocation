@@ -1,0 +1,94 @@
+{
+  "selected": "Logistic Regression",
+  "validation_f1": 0.7895146047220899,
+  "test": {
+    "accuracy": 0.85,
+    "precision_macro": 0.815687393740755,
+    "recall_macro": 0.7075610032005099,
+    "f1_macro": 0.7524180444967693,
+    "confusion_matrix": [
+      [
+        109,
+        32,
+        0,
+        0
+      ],
+      [
+        20,
+        363,
+        8,
+        0
+      ],
+      [
+        0,
+        26,
+        34,
+        1
+      ],
+      [
+        0,
+        0,
+        3,
+        4
+      ]
+    ],
+    "classification_report": {
+      "Low": {
+        "precision": 0.8449612403100775,
+        "recall": 0.7730496453900709,
+        "f1-score": 0.8074074074074075,
+        "support": 141.0
+      },
+      "Medium": {
+        "precision": 0.8622327790973872,
+        "recall": 0.928388746803069,
+        "f1-score": 0.8940886699507389,
+        "support": 391.0
+      },
+      "High": {
+        "precision": 0.7555555555555555,
+        "recall": 0.5573770491803278,
+        "f1-score": 0.6415094339622641,
+        "support": 61.0
+      },
+      "Critical": {
+        "precision": 0.8,
+        "recall": 0.5714285714285714,
+        "f1-score": 0.6666666666666666,
+        "support": 7.0
+      },
+      "accuracy": 0.85,
+      "macro avg": {
+        "precision": 0.8156873937407549,
+        "recall": 0.7075610032005097,
+        "f1-score": 0.7524180444967692,
+        "support": 600.0
+      },
+      "weighted avg": {
+        "precision": 0.846602400666147,
+        "recall": 0.85,
+        "f1-score": 0.8453864275559135,
+        "support": 600.0
+      }
+    },
+    "roc_auc_ovr_macro": 0.9627122029002935,
+    "multiclass_brier": 0.21262043266381356
+  },
+  "splits": {
+    "train": 1800,
+    "validation": 600,
+    "test": 600
+  }
+}
+                          scenario  mean_absolute_score_change  changed_ranks  rescue_units_reassigned  missed_high_severity_areas  false_high_prioritizations  high_severity_without_rescue  mean_confidence  missing_feature_cells
+                     Complete Data                    0.000000              0                        0                           0                           0                             0         0.914802                      0
+Missing Vulnerable Population Data                    0.574424              4                        1                           0                           0                             0         0.910817                      5
+       Delayed Emergency Call Data                    1.127535              0                        0                           0                           0                             0         0.887869                      0
+                 Noisy Sensor Data                    5.315081              9                        2                           0                           0                             0         0.794940                      0
+        Underrepresented Area Data                    1.036521              4                        1                           0                           0                             0         0.908316                      5
+area_category   n  high_severity_n  miss_rate_high  mean_score  mean_rescue_teams                interpretation
+      Central 150               15        0.400000   47.437728           0.326667 Descriptive only; small group
+   Peripheral 250               33        0.363636   51.642163           0.532000    Synthetic group diagnostic
+  Residential 200               20        0.400000   47.797264           0.340000 Descriptive only; small group
+Generated README, full 21-section report, architecture/ethics/data/model cards, 15 slides, demo and 60 viva answers.
+Saved 12 reviewed area records; 2 justified overrides; hash chain valid.

@@ -1,0 +1,13 @@
+area_id,area_name,area_category,prediction,confidence,priority_score,rank,rescue_teams,ambulances,medical_supplies,food_shelter_units,priority_score_baseline,rank_baseline,rescue_teams_baseline,ambulances_baseline,medical_supplies_baseline,food_shelter_units_baseline,priority_score_change,rank_change,rescue_teams_change,ambulances_change,medical_supplies_change,food_shelter_units_change
+AREA-02,Riverside,Peripheral,High,0.9214343841953642,76.19233723439032,1,1,1,3,4,78.24713838943839,1,1,1,3,4,-2.054801155048068,0,0,0,0,0
+AREA-03,Old Town,Central,Medium,0.9896685288602551,54.98104023765164,2,1,1,2,3,54.98104023765164,2,1,1,2,3,0.0,0,0,0,0,0
+AREA-05,Hill Junction,Residential,Medium,0.9837690137845112,54.59882010879552,3,1,1,2,3,54.59882010879552,3,1,1,2,3,0.0,0,0,0,0,0
+AREA-12,Outer Settlement,Peripheral,Medium,0.9276993685781865,52.4801385212425,4,1,1,2,3,51.269520768168434,7,0,1,2,3,1.210617753074068,-3,1,0,0,0
+AREA-08,Canal Quarter,Peripheral,Medium,0.9117876477744493,51.941496616748445,5,1,1,2,3,53.359609341935474,4,1,1,2,3,-1.4181127251870294,1,0,0,0,0
+AREA-10,Lake Colony,Peripheral,Medium,0.9119774908176296,51.93238089876392,6,0,1,2,3,53.35339287144225,5,1,1,2,3,-1.4210119726783361,1,-1,0,0,0
+AREA-07,North Estate,Residential,Medium,0.8947935217429311,51.328945933644846,7,0,1,2,3,51.328945933644846,6,0,1,2,3,0.0,1,0,0,0,0
+AREA-01,Central Market,Central,Medium,0.7726745234499022,47.053156752400255,8,0,1,1,3,47.053156752400255,8,0,1,1,3,0.0,0,0,0,0,0
+AREA-11,Industrial Ward,Central,Low,0.8322072639705325,25.87281531949863,9,0,1,1,2,25.87281531949863,9,0,1,1,2,0.0,0,0,0,0,0
+AREA-04,East Gardens,Residential,Low,0.8544470371456232,25.09437342922343,10,0,1,1,1,25.09437342922343,10,0,1,1,1,0.0,0,0,0,0,0
+AREA-06,South Ward,Peripheral,Low,0.9469202438681509,21.857794147419842,11,0,0,1,1,21.069249201365626,11,0,0,1,1,0.7885449460542162,0,0,0,0,0
+AREA-09,West Park,Residential,Low,0.9824219688147603,20.61523232403927,12,0,0,1,1,20.61523232403927,12,0,0,1,1,0.0,0,0,0,0,0
